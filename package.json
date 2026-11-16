@@ -1,0 +1,41 @@
+{
+  "name": "algolab",
+  "private": true,
+  "version": "1.0.0",
+  "description": "PWA d'entraînement aux algorithmes OLL / PLL du Rubik's Cube 3x3",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "verify:algs": "tsx scripts/verify-algs.ts",
+    "test": "npm run verify:algs"
+  },
+  "dependencies": {
+    "cubing": "^0.66.1",
+    "gan-web-bluetooth": "^3.0.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "rxjs": "^7.8.2",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/web-bluetooth": "^0.0.22",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-pwa": "^2.0.0",
+    "workbox-window": "^7.4.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
